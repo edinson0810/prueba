@@ -21,10 +21,10 @@
     dolor quia hic. Perferendis?</p>
   <form>
     <label for="name">nombre</label>
-    <input type="text" name="nombre" placeholder="ingrese su nombre" required min="8"><br>
+    <input type="text" name="nombre" placeholder="ingrese su nombre" required minlength="8" maxlength="15"><br>
     <br>
     <label for="apellidos">apellidos</label>
-    <input type="text" name="apellidos" placeholder="ingrese sus apellidos" required min="8"><br>
+    <input type="text" name="apellidos" placeholder="ingrese sus apellidos" required minlength="8" maxlength="15"><br>
     <br>
     <label for="correo">correo</label>
     <input type="email" name="email" placeholder="ingrese su correo" required><br>
@@ -33,7 +33,7 @@
     <input type="text" name="mensaje" placeholder="ingrese el asunto" required><br>
     <br>
     <label for="number">telefono</label>
-    <input type="number" name="telefono" placeholder="ingrese su telefono" required><br>
+    <input type="tel" name="telefono" placeholder="ingrese su telefono" required ><br>
     <br>
     <label for="mensaje">mensaje</label><br>
     <textarea name="mensaje" placeholder="ingrese el mensaje" cols="30" rows="10" required></textarea><br>
