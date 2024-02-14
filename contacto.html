@@ -19,27 +19,52 @@
     iste soluta vel odio quos ratione tempora ullam sequi eius pariatur quaerat nobis autem cum, culpa iusto! Laboriosam
     voluptate aut alias accusantium animi voluptatibus corporis doloremque iste tempora, vel delectus similique nobis
     dolor quia hic. Perferendis?</p>
-  <form>
-    <label for="name">nombre</label>
-    <input type="text" name="nombre" placeholder="ingrese su nombre" required min="8"><br>
-    <br>
-    <label for="apellidos">apellidos</label>
-    <input type="text" name="apellidos" placeholder="ingrese sus apellidos" required min="8"><br>
-    <br>
-    <label for="correo">correo</label>
-    <input type="email" name="email" placeholder="ingrese su correo" required><br>
-    <br>
-    <label for="asunto">asunto</label>
-    <input type="text" name="mensaje" placeholder="ingrese el asunto" required><br>
-    <br>
-    <label for="number">telefono</label>
-    <input type="number" name="telefono" placeholder="ingrese su telefono" required><br>
-    <br>
-    <label for="mensaje">mensaje</label><br>
-    <textarea name="mensaje" placeholder="ingrese el mensaje" cols="30" rows="10" required></textarea><br>
-    <br>
-    <input type="submit" value="enviar">
-
+  <form action="post">
+    <div>
+      <label for="name">nombre</label>
+      <input type="text" name="nombre" placeholder="ingrese su nombre" required minlength="8">
+    </div>
+    <div>
+      <label for="email">correo</label>
+      <input type="text" name="corre" id="email" placeholder="escriba su correo" required>
+    </div>
+    <label for="telefono">telefono</label>
+    <input type="tel" name="telefono" id="telefono" required>
+    <div>
+      <label for="asunto">asunto</label>
+      <textarea name="asunto" id="asunto" cols="30" rows="10" required></textarea>
+    </div>
+    <div>
+      <label for="ciudad">ciudad</label>
+      <select name="ciudad" id="ciudad">
+        <option value="1">bucaramanga</option>
+        <option value="2" selected>bogota</option>
+        <option value="2">cali</option>
+      </select>
+    </div>
+    <label for="fecha">Fecha</label>
+    <input type="date">
+    <hr>
+    <label for="masculino">masculino</label>
+    <input type="radio" name="genero" id="masculino">
+    <label for="masculino">femenino</label>
+    <input type="radio" name="genero" id="femenino">
+    <label for="masculino">Otro</label>
+    <input type="radio" name="genero" id="otro">
+    <hr>
+    <div>
+      <input type="file" name="archivo" id="archivo" accept="image/*" multiple>
+    </div>
+    <p>Comidas favoritas</p>
+    <label for="comida">hamburguesa</label>
+    <input type="checkbox" name="hamburguesa" id="hamburguesa">
+    <label for="comida">perros</label>
+    <input type="checkbox" name="perro" id="perro">
+    <div>
+      <label for="edad">edad</label>
+      <input type="number" name="edad" id="edad">
+    </div>
+    <button>enviar</button>
   </form>
 </body>
 
